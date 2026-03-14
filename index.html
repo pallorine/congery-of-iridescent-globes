@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ʏ̴'̴ᴀ̴ɪ̸'̵ɴ̴ɢ̶'̴ɴ̸ɢ̶ᴀ̴ʜ̵ ̶ʜ̸'̴ᴇ̴ᴇ̴-̶ʟ̷'̴ɢ̵ᴇ̷ʙ̷ ̴</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <audio id="audio-genjoh" src="assets/genjoh.mp3" autoplay preload="auto" loop></audio>
+        <audio id="audio-login" src="assets/login.mp3" autoplay preload="auto"></audio>
+        
+        <div class="cover-container">
+            <img src="assets/eirin-banner.png" alt="Eirin Yagokoro" class="banner-image">
+            <h1 style="margin-bottom: 0;">八意　永琳</h1>
+            <h1 style="margin-top: 0;">Eirin Yagokoro</h1>
+            <p class="subtitle">Peer into the Dark Tapestry beyond the Moon.</p>
+            <a href="pages/general.html" class="enter-btn">Enter</a>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var audioGenjoh = document.getElementById('audio-genjoh');
+            var audioLogin = document.getElementById('audio-login');
+            var coverContainer = document.querySelector('.cover-container');
+
+            audioGenjoh.loop = true;
+
+            setTimeout(function() {
+                coverContainer.classList.add('fade-in');
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>
